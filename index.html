@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min" />
+  </head>
+  <body class="body">
+    <header class="header"></header>
+
+    <main>
+      <section class="section aboutus">
+        <div class="container">
+          <div class="aboutus-image-container">
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+          <div class="aboutus-text-container">
+            <p class="text small-text">О НАС</p>
+            <h2 class="title">Лучший Барбершоп твоего города</h2>
+            <p class="text">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе
+              точно к нам.
+            </p>
+            <p class="text medium-text">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="button" data-modal-open>ОНЛАЙН-ЗАПИСЬ</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section prices">
+        <div class="container">
+          <p class="text small-text">
+            Проведи время в компании лучших мастеров
+          </p>
+          <h2 class="title">Услуги и цены</h2>
+          <div class="first pricebox">
+            <ul class="list">
+              <li class="item">
+                <div>
+                  <p class="text">Мужская стрижка</p>
+                  <p class="text price">от 300 грн.</p>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <p class="text">Стрижка бороды</p>
+                  <p class="text price">от 200 грн.</p>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <p class="text">Стрижка усов</p>
+                  <p class="text price">от 300 грн.</p>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <p class="text">Бритье опасной бритвой</p>
+                  <p class="text price">от 300 грн.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="second pricebox">
+            <ul class="list">
+              <li class="item">
+                <div>
+                  <p class="text">Cтрижка у стажера</p>
+                  <p class="text price">от 50 грн.</p>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <p class="text">Стрижка под насадку</p>
+                  <p class="text price">от 200 грн.</p>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <p class="text">Детская стрижка (до 12 лет)</p>
+                  <p class="text price">от 300 грн.</p>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <p class="text">Камуфлирование седины</p>
+                  <p class="text price">от 200 грн.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="button" data-modal-open>ОНЛАЙН-ЗАПИСЬ</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector('.page-header')
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

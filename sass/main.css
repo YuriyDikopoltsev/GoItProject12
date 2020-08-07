@@ -1,0 +1,800 @@
+@charset "UTF-8";
+/*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+Add the correct height in Firefox.
+*/
+hr {
+  height: 0;
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Correct the padding in Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+h1 {
+  color: blue;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
+.big-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #303030;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 18px;
+  justify-content: space-between;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #303030;
+}
+
+.button:hover, .button:focus {
+  background: #ff6c00;
+  color: #ffffff;
+}
+
+.header-title {
+  color: black;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .feature-container {
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 31px;
+    width: 480px;
+  }
+  .old-school {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #303030;
+  }
+  .old::before {
+    content: '————';
+    display: inline-block;
+    color: #303030;
+    font-weight: 400;
+  }
+  .Why-we-header {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    color: #303030;
+  }
+  .Why-we {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: #555555;
+    margin-bottom: 44px;
+  }
+  .features {
+    padding-top: 90px;
+    padding-bottom: 116px;
+  }
+  .box-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .features .item {
+    background: #f7f7f7;
+    width: 194px;
+    height: 133px;
+  }
+  .features .item:nth-child(2n) {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-container {
+    padding: 0 40px;
+    width: 768px;
+  }
+  .features {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .feature-about {
+    margin-right: 200px;
+  }
+  .box-list {
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .features .item {
+    width: 210px;
+    height: 134px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-container {
+    width: 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .features {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .feature-about {
+    margin-left: 100px;
+    margin-right: 0px;
+  }
+  .box-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
+  .features .item {
+    width: 170px;
+    height: 133px;
+  }
+}
+
+/* .mobile-wrapper {
+  padding: 0 31px;
+} */
+.feature-content {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.16;
+  text-align: center;
+  color: #303030;
+}
+
+.figure {
+  padding: 20px 35px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.figure::after {
+  position: absolute;
+  content: '+';
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: center;
+  color: #ff6c00;
+}
+
+.masters {
+  background-color: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.masters .title {
+  position: relative;
+  margin: 0;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.masters .title::before {
+  position: absolute;
+  background-color: #303030;
+  content: '';
+  width: 60px;
+  height: 1px;
+  top: 8px;
+  left: -80px;
+}
+
+.masters .big-title {
+  margin: 0;
+  margin-bottom: 44px;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.masters h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #303030;
+}
+
+.masters p {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.masters ul {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+.masters .comand-soc {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.masters-list {
+  width: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  .masters-list {
+    margin-bottom: 64px;
+  }
+  .masters-list:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.masters-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 1px 1px;
+  font-family: "Raleway", sans-serif;
+  color: #303030;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.masters-list .link:hover, .masters-list .link:focus {
+  color: #ff6c00;
+}
+
+.masters-soc {
+  width: 1, 1em;
+  height: 1, 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.masters .soc-cont {
+  margin-right: 10px;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .masters {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .masters .container {
+    padding-left: 159px;
+    padding-right: 159px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .masters ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .masters-list {
+    margin-right: 0;
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+  }
+  .masters-list:last-child {
+    margin-right: 0px;
+  }
+}
+
+.gallery {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.gallery ul {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery li {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.gallery li:last-child {
+  margin-bottom: 0px;
+}
+
+.gallery .title {
+  display: block;
+  position: relative;
+  margin: 0;
+  margin-bottom: 44px;
+  margin-left: 80px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.gallery .title::before {
+  position: absolute;
+  background-color: #303030;
+  content: '';
+  width: 60px;
+  height: 1px;
+  top: 8px;
+  left: -80px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  .gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery li {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .gallery li:nth-child(even) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery {
+    padding-top: 130px;
+    padding-bottom: 100px;
+  }
+  .gallery li {
+    width: calc((100% - 30px * 3) / 4);
+  }
+  .gallery li:last-child {
+    margin-right: 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+// Base
+@import './base/normalize';
+@import './utils/variables';
+
+// Utils
+@import './utils/breakpoints';
+@import './base/html';
+@import './utils/mixins';
+
+// Components
+@import './componets/header';
+@import './componets/features';
+@import './componets/1_section_about_us';
+@import './componets/2_section_pricelist';
+@import './componets/masters';
+@import './componets/gallery';
