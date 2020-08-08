@@ -1,0 +1,102 @@
+@media screen and (min-width: $mobile) {
+  .pricelist {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-image: url('/images/section-2-prices/mob-prices-img.png');
+    &::before {
+      position: absolute;
+      background-color: $primary-text-color;
+      content: '';
+      width: 60px;
+      height: 1px;
+      top: 8px;
+      left: -80px;
+    }
+  }
+  .pricelist-container {
+    padding-bottom: 40px;
+    & h3 {
+      padding-bottom: 20px;
+      padding-left: 80px;
+      font-size: 11px;
+      line-height: 15px;
+      color: $h3-alt-text-color;
+    }
+    & h2 {
+      padding-bottom: 44px;
+    }
+    & .pricebox {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+  .list-pricelist .item {
+    display: flex;
+    justify-content: space-between;
+    & :first-child {
+      padding-right: 5px;
+    }
+    & :last-child {
+      padding-left: 5px;
+    }
+    & .text {
+      min-width: max-content;
+      max-height: 20px;
+      font-family: $font-family-open-sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: $price-alt-text-color;
+    }
+    & .text-line {
+      width: 100%;
+      border-bottom: 1px solid $h3-alt-text-color;
+    }
+  }
+}
+@media screen and (min-width: $tablet) {
+}
+@media screen and (min-width: $desktop) {
+}
+/*h2 {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  color: $primary-text-color;
+  max-width: 330px;
+  padding-bottom: 20px;
+}
+h3 {
+  position: relative;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: $primary-text-color;
+    transform: translateX(-80px) translateY(11.5px);
+  }
+}
+.text {
+  font-family: $font-family-open-sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+}*/

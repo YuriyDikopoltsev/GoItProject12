@@ -382,7 +382,7 @@ a {
 }
 
 h2 {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -403,17 +403,6 @@ h3 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #303030;
-}
-
-h3::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-  -webkit-transform: translateX(-80px) translateY(11.5px);
-          transform: translateX(-80px) translateY(11.5px);
 }
 
 .text {
@@ -622,6 +611,15 @@ ul {
     padding-top: 84px;
     padding-bottom: 84px;
   }
+  .aboutus::before {
+    position: absolute;
+    background-color: #303030;
+    content: '';
+    width: 60px;
+    height: 1px;
+    top: 8px;
+    left: -80px;
+  }
   .aboutus-text-container {
     padding-bottom: 40px;
   }
@@ -641,6 +639,151 @@ ul {
   }
 }
 
+/*h2 {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  color: $primary-text-color;
+  max-width: 330px;
+  padding-bottom: 20px;
+}
+h3 {
+  position: relative;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: $primary-text-color;
+    transform: translateX(-80px) translateY(11.5px);
+  }
+}
+.text {
+  font-family: $font-family-open-sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+}*/
+@media screen and (min-width: 480px) {
+  .pricelist {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-image: url("/images/section-2-prices/mob-prices-img.png");
+  }
+  .pricelist::before {
+    position: absolute;
+    background-color: #303030;
+    content: '';
+    width: 60px;
+    height: 1px;
+    top: 8px;
+    left: -80px;
+  }
+  .pricelist-container {
+    padding-bottom: 40px;
+  }
+  .pricelist-container h3 {
+    padding-bottom: 20px;
+    padding-left: 80px;
+    font-size: 11px;
+    line-height: 15px;
+    color: rgba(157, 164, 189, 0.6);
+  }
+  .pricelist-container h2 {
+    padding-bottom: 44px;
+  }
+  .pricelist-container .pricebox {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .list-pricelist .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .list-pricelist .item :first-child {
+    padding-right: 5px;
+  }
+  .list-pricelist .item :last-child {
+    padding-left: 5px;
+  }
+  .list-pricelist .item .text {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    max-height: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+  }
+  .list-pricelist .item .text-line {
+    width: 100%;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+  }
+}
+
+/*h2 {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  color: $primary-text-color;
+  max-width: 330px;
+  padding-bottom: 20px;
+}
+h3 {
+  position: relative;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: $primary-text-color;
+    transform: translateX(-80px) translateY(11.5px);
+  }
+}
+.text {
+  font-family: $font-family-open-sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+}*/
 .masters {
   background-color: #f7f7f7;
   padding-top: 84px;
